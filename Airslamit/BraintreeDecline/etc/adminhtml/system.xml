@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="airslamit" translate="label" sortOrder="10">
+            <label>Airslamit</label>
+        </tab>
+        <section id="helloworld" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Braintree CC Decline</label>
+            <tab>airslamit</tab>
+            <resource>Airslamit_BraintreeDecline::braintreedecline_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Configuration</label>
+                <field id="email_address" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>E-mail address</label>
+                    <comment>Specify e-mail address that should recieve notification emails when order is declined.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
